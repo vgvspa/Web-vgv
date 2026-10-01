@@ -20,14 +20,6 @@
 			description: 'Soluciones de calefacción para hogar y proyecto.',
 			ctaHref: '/catalogo?linea=calefont-calefaccion',
 			ctaText: 'Ver calefacción'
-		},
-		{
-			image: '/assets/Banners/Banner3.jpg',
-			alt: 'Línea de calefacción y accesorios VGV',
-			title: 'Calefont, radiadores y accesorios de instalación',
-			description: 'Asesoría técnica especializada',
-			ctaHref: '/catalogo?linea=calefont-calefaccion',
-			ctaText: 'Ver calefacción'
 		}
 	];
 
@@ -126,6 +118,43 @@
 		</ul>
 	</nav>
 </header>
+
+<style>
+	header nav {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		gap: 1rem;
+		padding: 1rem 2rem;
+	}
+
+	header nav ul {
+		display: flex;
+		align-items: center;
+		flex-wrap: wrap;
+		gap: 1.8rem;
+		list-style: none;
+		margin: 0;
+		padding: 0;
+	}
+
+	header .logo img {
+		height: 55px;
+		width: auto;
+	}
+
+	@media (max-width: 700px) {
+		header nav {
+			flex-direction: column;
+			align-items: flex-start;
+		}
+
+		header nav ul {
+			width: 100%;
+			gap: 0.4rem;
+		}
+	}
+</style>
 
 <section class="banner-slider">
 	{#each slides as slide, index (slide.image)}
